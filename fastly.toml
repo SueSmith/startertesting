@@ -1,0 +1,21 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["A coder"]
+description = "A starter kit for Fastly Compute that uses a Glitch origin website."
+language = "javascript"
+manifest_version = 2
+name = "Compute starter kit for Glitch"
+
+[scripts]
+  build = "npm run build"
+  post_init = "npm install"
+
+[setup]
+
+  [setup.backends]
+
+    [setup.backends.origin_0]
+      address = "glitch-hello-website.glitch.me"
+      description = "Glitch origin"
+      port = 443
