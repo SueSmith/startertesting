@@ -6,6 +6,7 @@ description = "A starter kit for Fastly Compute that uses a Glitch origin websit
 language = "javascript"
 manifest_version = 2
 name = "Compute starter kit for Glitch"
+service_id = "HJShYfTztVv4GV6RqEGrN3"
 
 [scripts]
   build = "npm run build"
